@@ -9,7 +9,7 @@ function getPromise<T extends (string | number)[]>(): Promise<T> {
   });
 }
 
-getPromise<[string, number]>().then((data) => {
+getPromise().then((data) => {
   console.log(data);
 });
 
